@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-950">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Dashboard</title>
+  <meta name="description" content="A Pomodoro timer, Schulte Table focus trainer, and dev resource locker in one distraction-free dashboard." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN for a zero-build project. Swap for the Vite + PostCSS
+       pipeline described in README.md if you want a production build step. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./src/styles/main.css" />
+</head>
+<body class="min-h-screen text-slate-100 antialiased">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <header class="flex flex-col items-center text-center gap-2 mb-8">
+      <h1 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
+        Focus <span class="text-amber-400">Dashboard</span>
+      </h1>
+      <p class="text-slate-400 text-sm sm:text-base max-w-md">
+        A calm corner for deep work: a Pomodoro timer, a focus warm-up drill, and your go-to dev resources.
+      </p>
+    </header>
+
+    <nav id="tab-bar" role="tablist" aria-label="Dashboard tools" class="flex justify-center gap-1 bg-slate-900/60 border border-slate-800 rounded-xl p-1.5 w-fit mx-auto mb-6"></nav>
+
+    <main class="bg-slate-900/40 border border-slate-800 rounded-2xl px-4 sm:px-8">
+      <section id="panel-pomodoro" role="tabpanel" aria-label="Pomodoro timer"></section>
+      <section id="panel-schulte" role="tabpanel" aria-label="Schulte table focus trainer" class="hidden"></section>
+      <section id="panel-resources" role="tabpanel" aria-label="Resource locker" class="hidden"></section>
+    </main>
+
+    <footer class="text-center text-xs text-slate-600 mt-8">
+      Built with vanilla JavaScript, ES modules, and Tailwind CSS. Data is stored locally in your browser.
+    </footer>
+  </div>
+
+  <div id="toast-root" class="fixed bottom-4 right-4 flex flex-col gap-2 pointer-events-none z-50" aria-live="polite"></div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
