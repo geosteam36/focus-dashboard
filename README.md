@@ -4,7 +4,7 @@
 > timer, a Schulte Table focus warm-up, and a personal dev-resource locker,
 > all in one page.
 
-**[Live Demo →](https://geosteam36.github.io/focus-dashboard/)** _(add your deployed link here)_
+**[Live Demo →](https://geosteam36.github.io/focus-dashboard/)**
 
 ![CI](https://github.com/geosteam36/focus-dashboard/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
