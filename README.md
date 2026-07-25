@@ -93,10 +93,10 @@ firing a toast without importing the Toast component directly).
 - [x] Resource search + tag filtering + add/remove
 - [x] Unit tests for all core logic (13 tests, Vitest)
 - [x] CI via GitHub Actions
-- [ ] Keyboard navigation for the Schulte grid (arrow keys + Enter)
-- [ ] Browser Notifications API integration for Pomodoro
-- [ ] Dark/light theme toggle
-- [ ] Optional Vite build pipeline for a minified production bundle
+- [x] Keyboard navigation for the Schulte grid (arrow keys + Enter)
+- [x] Browser Notifications API integration for Pomodoro
+- [x] Dark/light theme toggle
+- [x] Optional Vite build pipeline for a minified production bundle
 
 ## 🤝 Contributing
 
